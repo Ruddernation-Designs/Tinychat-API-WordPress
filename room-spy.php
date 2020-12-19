@@ -6,7 +6,7 @@
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
 * Requires at least: WordPress 2.0
-* Tested up to: 5.5
+* Tested up to: 5.6
 * Version: 1.3.1
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
