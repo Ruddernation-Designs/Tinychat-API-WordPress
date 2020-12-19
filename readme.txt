@@ -4,8 +4,8 @@ Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: Tinychat room spy, Tinychat api, room spy, wordpress chat, buddypress chat, wordpress video chat
 Requires at least: 5.0
-Tested up to: 5.5
-Stable tag: 1.3.0
+Tested up to: 5.6
+Stable tag: 1.3.1
 License: GNU3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -94,6 +94,11 @@ It'll show the images and selected data for who is in the room, number of users 
 
 * After some time out I've decided to add the Tinychat API as the directory doesn't really work.
 * It's been tested upto WP 5.5 and there was no issues I could find.
+
+= 1.3.1 =
+
+* Tested up to WordPress 5.6 without any issues.
+
 
 == Social Sites ==
 
