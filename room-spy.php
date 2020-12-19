@@ -4,16 +4,16 @@
 * Plugin URI: https://wordpress.org/plugins/tc-room-spy/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
-* Description: You can use this to search Tinychat profiles/rooms. 
-* Requires at least: WordPress 5.0
+* Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
+* Requires at least: WordPress 2.0
 * Tested up to: 5.5
-* Version: 1.3.0
+* Version: 1.3.1
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 27th November 2020
+* Date: 19th December 2020
 */
-define('COMPARE_VERSION', '1.2.9');
-defined( 'ABSPATH' ) or die( 'ooh aah cantona' );
+define('COMPARE_VERSION', '1.3.0');
+defined( 'ABSPATH' ) or die( 'Hey, have you seen my spectacles' );
 register_activation_hook(__FILE__, 'rndtc_room_spy_install');
 function rndtc_room_spy_install() {
 	global $wpdb, $wp_version;
