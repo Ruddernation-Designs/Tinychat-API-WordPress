@@ -7,12 +7,12 @@
 * Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
 * Requires at least: WordPress 2.0
 * Tested up to: 5.6
-* Version: 1.3.1
-* License: GNUv3
+* Version: 1.3.2
+* License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 19th December 2020
+* Date: 03rd May 2021
 */
-define('COMPARE_VERSION', '1.3.0');
+define('COMPARE_VERSION', '1.3.1');
 defined( 'ABSPATH' ) or die( 'Hey, have you seen my spectacles' );
 register_activation_hook(__FILE__, 'rndtc_room_spy_install');
 function rndtc_room_spy_install() {
@@ -45,15 +45,6 @@ function wp_show_rndtc_room_spy_page($content = '') {
 function wp_show_rndtc_room_spy() {
 	if(!get_option('rndtc_room_spy_enabled', 0)) 
 	{
-		function getSSLPage($url) {
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_HEADER, false);
-    		curl_setopt($ch, CURLOPT_URL, $url);
-    		curl_setopt($ch, CURLOPT_SSLVERSION,3);
-			$result = curl_exec($ch);
-    		curl_close($ch);
-			return $result;
-		}
 		if(isset($_POST['chosen'])) 
 		{
 			$room = $_POST['room'];
@@ -90,8 +81,6 @@ function wp_show_rndtc_room_spy() {
 				}
 				$nc=html_entity_decode(file_get_contents_new('https://tinychat.com/api/v1.0/user/profile?username='.$room.''));
 				$namecheck = json_decode($nc, true);
-				$data=file_get_contents('https://tinychat.com/api/v1.0/user/profile?username='.$room.'');
-				$roomie = json_decode($data, true);
 			}
 		}
 ?>
@@ -137,6 +126,7 @@ function wp_show_rndtc_room_spy() {
 						echo '<br><strong>Membership: ' .$new["role"].'</strong>';
 						echo '<br><strong>Points: ' .$new["giftpoints"]." - ".'To Next Level: '.$new["percentToNextAchieve"].'%</p></strong>';
 						echo '<br><strong><a href="https://www.ruddernation.com/chat">Join Chat</a></strong>';
+						
 					}
 				}
 			}
