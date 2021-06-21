@@ -7,12 +7,12 @@
 * Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
 * Requires at least: WordPress 2.0
 * Tested up to: 5.7.2
-* Version: 1.3.3
+* Version: 1.3.4
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 * Date: 27th May 2021
 */
-define('COMPARE_VERSION', '1.3.2');
+define('COMPARE_VERSION', '1.3.3');
 defined( 'ABSPATH' ) or die( 'Is this the right room?' );
 register_activation_hook(__FILE__, 'rndtc_room_spy_install');
 function rndtc_room_spy_install() {
@@ -90,7 +90,7 @@ function wp_show_rndtc_room_spy() {
 					elseif
 						($new["result"] == "success")
 					{
-						echo '<br><img src="'.$new["avatarUrl"].'" class="roomimage" alt="'.$new["username"].'"></img><br>';
+						echo '<br><img src="'.$new["avatarUrl"].'" alt="'.$new["username"].'"></img><br>';
 						echo '<p><br><strong>Username: ' .$new["username"].'</strong>';
 						$url = '@(http)?(s)?(://)?(([a-zA-Z])([-\w]+\.)+([^\s\.]+[^\s]*)+[^,.\s])@';
 						$new["biography"] = preg_replace($url, '<strong><a href="http$2://$4" target="_blank" title="$0">$0</a></strong>',$new["biography"]);
