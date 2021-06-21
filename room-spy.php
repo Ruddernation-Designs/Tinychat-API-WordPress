@@ -10,7 +10,7 @@
 * Version: 1.3.4
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 27th May 2021
+* Date: 21st June 2021
 */
 define('COMPARE_VERSION', '1.3.3');
 defined( 'ABSPATH' ) or die( 'Is this the right room?' );
