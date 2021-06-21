@@ -5,7 +5,7 @@ Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: Tinychat room spy, Tinychat api, room spy, wordpress chat, buddypress chat, wordpress video chat
 Requires at least: 5.0
 Tested up to: 5.7.2
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GNU3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
