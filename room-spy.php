@@ -6,14 +6,14 @@
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
 * Requires at least: WordPress 2.0
-* Tested up to: 5.7.2
-* Version: 1.3.4
+* Tested up to: 5.8.2
+* Version: 1.3.6
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 21st June 2021
+* Date: 29 December 2021
 */
-define('COMPARE_VERSION', '1.3.3');
-defined( 'ABSPATH' ) or die( 'Is this the right room?' );
+define('COMPARE_VERSION', '1.3.5');
+defined( 'ABSPATH' ) or die( 'Hola' );
 register_activation_hook(__FILE__, 'rndtc_room_spy_install');
 function rndtc_room_spy_install() {
 	global $wpdb, $wp_version;
@@ -25,7 +25,7 @@ function rndtc_room_spy_install() {
 		$sql ="INSERT INTO ".$wpdb->posts."(
 			post_author, post_date, post_date_gmt, post_content, post_content_filtered, post_title, post_excerpt,  post_status, comment_status, ping_status, post_password, post_name, to_ping, pinged, post_modified, post_modified_gmt, post_parent, menu_order, post_type)
 			VALUES
-			('1', '$post_date', '$post_date_gmt', '[rndtc_room_spy_page]', '', 'tcroomspy', '', 'publish', 'closed', 'closed', '', 'Tinychat API', '', '', '$post_date', '$post_date_gmt', '0', '0', 'page')";
+			('1', '$post_date', '$post_date_gmt', '[rndtc_room_spy_page]', '', 'tcroomspy', '', 'publish', 'closed', 'closed', '', 'tinychat-api', '', '', '$post_date', '$post_date_gmt', '0', '0', 'page')";
 		$wpdb->query($sql);
 		$post_id = $wpdb->insert_id;
 		$wpdb->query("UPDATE $wpdb->posts SET guid = '" . get_permalink($post_id) . "' WHERE ID = '$post_id'");
@@ -71,10 +71,11 @@ function wp_show_rndtc_room_spy() {
 				}
 		}
 ?>
+This allows you to view the Tinychat API for your room, it does not do a live view anymore.
 <form method="post">
 <input type="text" tabindex="1" name="room" placeholder="Tinychat room/user" id="roomname" list="roomdata" autofocus required/> 
 <input type="hidden" name="chosen" value="true">
-<button type="submit" class="button">Spy</button></form><br>
+<button type="submit" class="button">View</button></form><br>
 <?php
 		
 		if (preg_match('/^[a-z0-9]/', $room=strtolower($room)))
@@ -108,7 +109,7 @@ function wp_show_rndtc_room_spy() {
 						echo '<br><strong>Location: ' .$new["location"].'</strong>';
 						if (!empty($new["role"] == "")) 
 						{
-							echo '<br><strong>Membership: God Mode';
+							echo '<br><strong>Membership: Platinum';
 						}
 						else
 						echo '<br><strong>Membership: ' .$new["role"].'</strong>';
