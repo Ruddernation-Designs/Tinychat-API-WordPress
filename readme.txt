@@ -5,7 +5,7 @@ Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: Tinychat room spy, Tinychat api, room spy, wordpress chat, buddypress chat, wordpress video chat
 Requires at least: 5.0
 Tested up to: 5.8.2
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -101,6 +101,10 @@ It'll show the images and selected data for who is in the room, number of users 
 = 1.3.6 =
 
 * Change of room name as it was causing an issue, so it's gone from 'Tinychat API' to 'tinychat-api', Thanks to the person that pointed out an issue. 
+
+= 1.3.7 =
+
+* Update the license to MIT and removed a few old links.
 
 == Social Sites ==
 
