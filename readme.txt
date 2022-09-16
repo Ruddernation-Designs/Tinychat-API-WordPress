@@ -5,9 +5,9 @@ Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: Tinychat room spy, Tinychat api, room spy, wordpress chat, buddypress chat, wordpress video chat
 Requires at least: 5.0
 Tested up to: 5.8.2
-Stable tag: 1.3.6
-License: GNU3
-License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Stable tag: 1.3.7
+License: MIT
+License URI: https://opensource.org/licenses/MIT
 
 == Description ==
 
@@ -71,7 +71,7 @@ It'll show the images and selected data for who is in the room, number of users 
 
 = 1.1.6 =
 
-* This is no longer working so please use https://www.tinchat.cf/directory to view the users in chat rooms.
+* This is no longer working so please use https://www.ruddernation.com/api to view the users in chat rooms.
 
 = 1.1.7 =
 
@@ -88,7 +88,7 @@ It'll show the images and selected data for who is in the room, number of users 
 
 = 1.2.3 =
 
-* Due to unforeseen circumstances I've decided to discontinue this plugin, This is still available on https://www.ruddernation.cf/directory - Ignore!
+* Due to unforeseen circumstances I've decided to discontinue this plugin, This is still available on https://www.ruddernation.com/api
 
 = 1.2.9 =
 
@@ -102,17 +102,17 @@ It'll show the images and selected data for who is in the room, number of users 
 
 * Change of room name as it was causing an issue, so it's gone from 'Tinychat API' to 'tinychat-api', Thanks to the person that pointed out an issue. 
 
+= 1.3.7 =
+
+* Update the license to MIT and removed a few old links.
+
 == Social Sites ==
 
 * <a href="https://www.ruddernation.com"  rel="nofollow ugc">Developers Website</a>
 
 * <a href="https://profiles.wordpress.org/ruddernationdesigns"  rel="nofollow ugc">WordPress</a>
 
-* <a href="https://tinychat.com" rel="nofollow ugc">Tinychat</a>
-
 * <a href="https://www.ruddernation.com/privacy-policy/" rel="nofollow ugc">Privacy Policy for Ruddernation Designs</a>
-
-* <a href="https://tinychat.com/privacy.html" rel="nofollow ugc">Privacy Policy for Tinychat</a>
 
 == Contact Details ==
 
