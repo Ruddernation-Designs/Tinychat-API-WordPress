@@ -3,9 +3,9 @@
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: Tinychat room spy, Tinychat api, room spy, wordpress chat, wordpress video chat, Tinychat, Tinychat roomspy, roomspy
-Requires at least: 2.0
-Tested up to: 6.0.2
-Stable tag: 1.3.9
+Requires at least: 4.0
+Tested up to: 6.0.3
+Stable tag: 1.4.0
 License: GNU3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
