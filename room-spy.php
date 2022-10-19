@@ -5,14 +5,14 @@
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: You can use this to search Tinychat profiles/rooms, This contains no CSS! So you may need to add your own custom CSS.
-* Requires at least: WordPress 2.0
-* Tested up to: 6.0.2
-* Version: 1.3.9
+* Requires at least: WordPress 4.0
+* Tested up to: 6.0.3
+* Version: 1.4.0
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 25th September 2022
+* Date: 19th October 2022
 */
-define('COMPARE_VERSION', '1.3.8');
+define('COMPARE_VERSION', '1.3.9');
 defined( 'ABSPATH' ) or die( 'Greetings & salutations' );
 register_activation_hook(__FILE__, 'rndtc_room_spy_install');
 function rndtc_room_spy_install() {
@@ -107,11 +107,12 @@ This allows you to view the Tinychat API for your room, it does not do a live vi
 						}
 						echo '<br><strong>Age: ' .$new["age"].'</strong></strong>';
 						echo '<br><strong>Location: ' .$new["location"].'</strong>';
-						if (!empty($new["role"] == "")) 
+						//No need for this but it's here as an example.
+				/*		if (!empty($new["role"] == "")) 
 						{
 							echo '<br><strong>Membership: Extreme';
-						}
-						else
+						} 
+						else*/
 						echo '<br><strong>Membership: ' .$new["role"].'</strong>';
 						echo '<br><strong>Points: ' .$new["giftpoints"]." - ".'To Next Level: '.$new["percentToNextAchieve"].'%</p></strong>';
 						echo '<br><strong><a href="https://www.ruddernation.com/chat/'.$room.'">Join Chat</a></strong>';
